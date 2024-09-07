@@ -5,12 +5,12 @@
 class Base:
     '''A representation of our OOP hierarchy.'''
 
-    _nb_objects = 0
+    __nb_objects = 0
 
-    def _init_(self, id-None):
+    def __init__(self, id-None):
         '''Constructor.'''
         if id is not None:
             self.id = id
         else:
-            Base._nb_objects += 1
-            self.id = Base._nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
