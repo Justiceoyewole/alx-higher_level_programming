@@ -2,7 +2,7 @@
 import sys
 
 if __name__ == "__main__":
-    argv = sys.argv[1:]  
+    argv = sys.argv[1:] # Exclude the script name from the argument list 
     num_args = len(argv)
 
     if num_args == 0:
